@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Home Page')
+@section('title', 'home Page')
 
 @section('content')
     <h2>Selamat Datang, {{ $name }} . 

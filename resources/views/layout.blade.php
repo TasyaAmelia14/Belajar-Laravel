@@ -2,7 +2,7 @@
 <nav>
     <ul>
         {{-- http://localhost:8000/home --}}
-        <li><a href="{{ url('home') }}">Beranda</a></li>
+        <li><a href="{{ url('home') }}">home</a></li>
         <li><a href="{{ url('about') }}">About</a></li>
         <li><a href="{{ url('contact') }}">Contact</a></li>
     </ul>

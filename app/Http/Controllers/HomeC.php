@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\StudentM;
 
 class HomeC extends Controller
 {
     public function index(){
-        $user = ['name' => 'tasya', 'role' => 'teller'];
-        return view('pages.home', $user);
+        $user = ['name' => 'amelia', 'role' => 'admin'];
+    return view('pages.home', $user);
     }
 
     public function about(){
@@ -20,6 +21,7 @@ class HomeC extends Controller
         $data = [
             "person" => ["T", "A", "S", "Y", "A"]
         ];
-        return view('pages.contact', $data);
+        return view('pages.contact', ['data' => $data]);
     }
 }
+
